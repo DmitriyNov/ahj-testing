@@ -10,7 +10,11 @@
     "sourceType": "module"
   },
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "jest/no-standalone-expect": [
+      "error",
+      { "additionalTestBlockFunctions": ["handler"] }
+    ]
   },
   "overrides": [
     {

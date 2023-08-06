@@ -5,7 +5,7 @@ const input = document.querySelector(".wiget-input");
 const submit = document.querySelector(".widget-submit");
 const icons = document.querySelectorAll(".widget-icon");
 
-input.addEventListener("input", (event) => {
+input.addEventListener("input", () => {
   const value = input.value;
   let paymentSystem = membership(value);
   icons.forEach((element) => {
@@ -14,7 +14,7 @@ input.addEventListener("input", (event) => {
     } else {
       element.classList.remove("checked");
     }
-  })
+  });
 });
 
 submit.addEventListener("click", (event) => {

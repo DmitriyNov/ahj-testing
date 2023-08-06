@@ -7,7 +7,7 @@ const dataList = [
 ];
 
 const handler = test.each(dataList);
-handler('Testing membership function', (value, expected) => {
+handler("Testing membership function", (value, expected) => {
   const result = membership(value);
   expect(result).toBe(expected);
 });

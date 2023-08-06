@@ -1,4 +1,4 @@
-export function membership (value) {
+export function membership(value) {
   const number = value[0];
   if (number === "2") {
     return "mir";

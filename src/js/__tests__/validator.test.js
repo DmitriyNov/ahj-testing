@@ -7,7 +7,7 @@ const dataList = [
 ];
 
 const handler = test.each(dataList);
-handler('Testing validator function', (value, expected) => {
+handler("Testing validator function", (value, expected) => {
   const result = validator(value);
   expect(result).toBe(expected);
 });

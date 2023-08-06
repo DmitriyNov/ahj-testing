@@ -1,4 +1,4 @@
-export function validator (value) {
+export function validator(value) {
   const payload = value.slice(0, value.length - 1);
   let digitsSum = 0;
   const length = value.length;
@@ -7,7 +7,7 @@ export function validator (value) {
     for (let i = 0; i < payload.length; i++) {
       const number = Number(payload[i]);
       let multipliers;
-      if (i % 2 == (payload.length % 2)) {
+      if (i % 2 == payload.length % 2) {
         multipliers = 1;
       } else {
         multipliers = 2;
@@ -21,7 +21,7 @@ export function validator (value) {
         digitsSum += sum;
       }
     }
-    const validateValue = payload + (10 - digitsSum % 10);
+    const validateValue = payload + (10 - (digitsSum % 10));
 
     if (validateValue == value) {
       console.log("true");
