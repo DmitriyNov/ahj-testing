@@ -1,0 +1,73 @@
+body {
+    background-color: #c7c6c6;
+    color: #2b2b2b;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.widget {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.widget-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.widget-icon {
+    height: 30px;
+    width: 48px;
+    border: 1px solid #3b3b3b;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+.visa {
+    background-image: url('/src/img/credit_card_visa_payment_method_icon_134914.png');
+}
+
+.mastercard {
+    background-image: url('/src/img/iconfinder-mastercard-4661633_122834.png');
+}
+
+.mir {
+    background-image: url('/src/img/icons8-mir-48.png');
+}
+
+.checked {
+    filter: none;
+}
+
+.wiget-form {
+    display: flex;
+    gap: 10px;
+}
+
+.wiget-input {
+    width: 250px;
+    font-size: 20px;
+}
+
+.widget-submit {
+    width: 120px;
+    background-color: #ebe044;
+    font-size: 20px;
+}
+
+.valide {
+    background-color: #46dd18;
+}
+
+.invalide {
+    background-color: #dd1818;
+}
